@@ -16,7 +16,15 @@ describe("Plane", function() {
       expect(plane.isFlying).toBe(false);
     });
 
+    it("is flying after taking off", function() {
+      plane.land();
+      plane.takeOff();
+      expect(plane.isFlying).toBe(true);
+    });
+
   });
+
+
 
 
 

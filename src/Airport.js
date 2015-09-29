@@ -1,13 +1,16 @@
 function Airport() {
   this.hangar = [];
   this.capacity = 5;
+  this.weather = new Weather;
 };
 
 Airport.prototype.land = function(plane) {
   if(this.isFull()) {
     throw new Error("Airport is full");
+  } else if(this.weather.isStormy()) {
+    throw new Error("Weather is too stormy");
   } else {
-    plane.land()
+    plane.land();
     this.hangar.push(plane);
   };
 };

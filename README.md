@@ -9,7 +9,7 @@ This challenge serves as an introduction to Javascript and the Jasmine testing f
 
 ## Usage
 
-This project currently does not have the capabilities to be hosted on a server nor does it have a UI. The functionality may be tested in the command line.
+This project currently does not have the capabilities to be hosted on a server nor does it have a UI. The functionality may be tested in the console.
 
 ## Running tests
 
